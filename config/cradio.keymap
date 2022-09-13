@@ -69,7 +69,7 @@
 		
 		num_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp KP_NUM		&kp PLUS  &KP MINUS  &kp STAR   &kp FSLH  &kp EQUAL
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp KP_NUM		&kp PLUS  &kp MINUS  &kp STAR   &kp FSLH  &kp EQUAL
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  					&kp N6    &kp N7     &kp N8     &kp N9    &kp N0 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   			&kp N1 	  &kp N2     &kp N3     &kp N4    &kp N5   
 					 &trans &to DEFAULT  				&kp DOT &trans 
