@@ -51,10 +51,10 @@
 
        		nav_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp RET 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &to DEFAULT				&kp RGUI &to NUM 
+		&trans  &trans    &trans    &trans    &trans		&trans    &kp K_PASTE &kp K_COPY &kp K_CUT &trans 
+		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT     &kp HASH 		&kp CAPS  &kp LEFT    &kp UP     &kp DOWN  &kp RIGHT 
+		&trans    &trans 	&trans &trans  &trans   	&kp INSERT &kp HOME &kp PG_DN &kp PG_UP  &kp END 
+					    &mo 1  &to DEFAULT				&kp RET   &to NUM 
 		>;
 		};
 		
