@@ -20,22 +20,24 @@
 
 / { 
 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-
-    };
+/*
+*    combos {
+*        compatible = "zmk,combos";
+*        combo_esc {
+*            timeout-ms = <50>;
+*            key-positions = <0 1>;
+*            bindings = <&kp ESC>;
+*        };
+*        
+*         combo_tab {
+*            timeout-ms = <50>;
+*            key-positions = <10 11>;
+*            bindings = <&kp TAB>;
+*        };
+*       
+*
+*   };
+*/
 
         keymap {
                 compatible = "zmk,keymap";
@@ -54,7 +56,7 @@
 		&trans  &trans    &trans    &trans    &trans		&trans    &kp K_PASTE &kp K_COPY &kp K_CUT &trans 
 		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT     &kp HASH 		&kp CAPS  &kp LEFT    &kp UP     &kp DOWN  &kp RIGHT 
 		&trans    &trans 	&trans &trans  &trans   	&kp INSERT &kp HOME &kp PG_DN &kp PG_UP  &kp END 
-					    &mo 1  &to DEFAULT				&kp RET   &to NUM 
+					    &kp LALT(BSPC)  &to DEFAULT				&kp RET   &to NUM 
 		>;
 		};
 		
