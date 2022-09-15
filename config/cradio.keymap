@@ -56,7 +56,7 @@
 		&trans  &trans    &trans    &trans    &trans		&trans    &kp K_PASTE &kp K_COPY &kp K_CUT &trans 
 		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT     &kp HASH 		&kp CAPS  &kp LEFT    &kp UP     &kp DOWN  &kp RIGHT 
 		&trans    &trans 	&trans &trans  &trans   	&kp INSERT &kp HOME &kp PG_DN &kp PG_UP  &kp END 
-					    &kp LALT(BSPC)  &to DEFAULT				&kp RET   &to NUM 
+					    &kp BSPC  &to DEFAULT				&kp RET   &to NUM 
 		>;
 		};
 		
