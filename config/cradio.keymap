@@ -56,7 +56,7 @@
 		&trans  &trans    &trans    &trans    &trans		                &kp LC(A)    &kp LC(V) &kp LC(C) &kp LC(X) &trans 
 		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT                       &kp HASH     &kp CAPS  &kp LEFT    &kp UP     &kp DOWN  &kp RIGHT 
 		&trans    &trans 	&trans &trans  &trans   	                &kp INSERT &kp HOME &kp PG_DN &kp PG_UP  &kp END 
-					    &LA(BSPC)  &to DEFAULT			&kp RET   &to NUM 
+					    &kp LA(BSPC)  &to DEFAULT			&kp RET   &to NUM 
 		>;
 		};
 		
