@@ -71,10 +71,10 @@
 		
 		num_layer {
 		bindings = <
-		&kp TILDE  &kp SQT    &kp DQT    &kp PIPE    &kp KP_NUM		&kp MINUS &kp PLUS   &kp STAR   &kp EQUAL  &kp FSLH
-		&kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR  					&kp N6    &kp N7     &kp N8     &kp N9    &kp N0 
-		&bt EXCL  &bt AT &bt HASH &kp DOLLAR &kp PERCENT   			&kp N1 	  &kp N2     &kp N3     &kp N4    &kp N5   
-					 &kp QMARK   &to DEFAULT  				&kp BSPC &kp DOT 
+		&kp TILDE  &kp SQT    &kp DQT    &kp PIPE    &kp KP_NUM	         	&kp MINUS &kp PLUS   &kp STAR   &kp EQUAL  &kp FSLH
+		&kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR  				&kp N6    &kp N7     &kp N8     &kp N9    &kp N0 
+		&kp EXCL  &kp AT &bt HASH &kp DOLLAR &kp PERCENT   			&kp N1 	  &kp N2     &kp N3     &kp N4    &kp N5   
+					 &kp QMARK   &to DEFAULT  			&kp BSPC &kp DOT 
 		>;
 		};	
         
