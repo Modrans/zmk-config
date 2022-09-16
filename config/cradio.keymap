@@ -53,7 +53,7 @@
 
        		nav_layer {
 		bindings = <
-		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
+		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
 		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT   &kp HASH                    &kp CAPS     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
 		&trans    &trans 	&trans &kp DEL  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
 					 &kp RET     &to DEFAULT				                    &kp LC(BSPC)      &to NUM 
