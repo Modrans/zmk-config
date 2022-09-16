@@ -14,8 +14,8 @@
 #define NUM	3
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / { 
@@ -53,9 +53,9 @@
 
        		nav_layer {
 		bindings = <
-		&trans  &trans    &trans    &trans     &kp LA(TAB)		                &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &trans 
-		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT                      	&kp HASH     &kp CAPS     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
-		&trans    &trans 	&trans &trans  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
+		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
+		&kp LWIN    &kp LALT    &kp LCTRL      &kp LSHIFT   &kp HASH                    &kp CAPS     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
+		&trans    &trans 	&trans &kp DEL  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
 					 &kp RET     &to DEFAULT				                    &kp LC(BSPC)      &to NUM 
 		>;
 		};
@@ -63,7 +63,7 @@
 		etc_layer {
 		bindings = <
 		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
+		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp TILDE &kp APOS  &kp LBRC  &kp RBRC   &kp BKSP
 		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
 					  &kp SPC &to DEFAULT  				&kp BSPC  &to NUM
 		>;
