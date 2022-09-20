@@ -53,9 +53,9 @@
 
        		nav_layer {
 		bindings = <
-		&trans        &trans      &trans         &trans     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
-		&kp LWIN      &kp LALT    &kp LCTRL      &kp LSHIFT   &kp HASH                    &kp CAPS     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
-		&caps_word        &trans 	&trans &kp DEL  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
+		&trans        &trans      &kp ESC         &kp TAB     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
+		&kp LWIN      &kp LALT    &kp LCTRL      &kp LSHIFT   &kp CAPS                    &caps_word     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
+		&trans        &trans 	&trans &kp DEL  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
 					 &kp RET     &to DEFAULT				                    &kp LC(BSPC)      &to NUM 
 		>;
 		};
