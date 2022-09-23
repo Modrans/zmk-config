@@ -44,28 +44,28 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp W    &kp F    &kp P    &kp B    				&kp J &kp L  &kp U    &kp Y   &kp SEMI
-		&kp A       &kp R    &kp S    &kp T    &kp G 			               	&kp M &kp N  &kp E    &kp I   &kp O
-		&mt LSFT Z  &kp X    &kp C    &kp D    &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				      &kp LSFT &kp SPACE  				&kp BSPC &to NAV 
+		&kp Q         &kp W      &kp F    &kp P    &kp B    			&kp J &kp L  &kp U    &kp Y   &kp SEMI
+		&kp A         &kp R      &kp S    &kp T    &kp G 			&kp M &kp N  &kp E    &kp I   &kp O
+		&mt LSHIFT Z  &kp X      &kp C    &kp D    &kp V			&kp K &kp H  &kp COMMA &kp DOT &kp SLASH
+          				          &kp LSHIFT &kp SPACE  	        &kp BSPC &to NAV 
 		>;
 		};
 
        		nav_layer {
 		bindings = <
-		&trans        &trans      &kp ESC         &kp TAB     &kp LA(TAB)	        &kp LC(A)    &kp LC(V)    &kp LC(C)     &kp LC(X)   &to ETC 
-		&kp LWIN      &kp LALT    &kp LCTRL      &kp LSHIFT   &kp CAPS                    &caps_word     &kp LEFT      &kp UP      &kp DOWN  &kp RIGHT 
-		&trans        &trans 	&trans &kp DEL  &trans   	                        &kp INSERT   &kp HOME     &kp PG_DN     &kp PG_UP   &kp END 
-					 &kp RET     &to DEFAULT				                    &kp LC(BSPC)      &to NUM 
+		&trans        &trans     &kp ESC   &kp TAB     &kp LA(TAB)	        &kp LC(A)      &kp LC(V)    &kp LC(C)   &kp LC(X)   &to ETC 
+		&kp LWIN      &kp LALT   &kp LCTRL &kp LSHIFT  &kp CAPS                 &caps_word     &kp LEFT     &kp UP      &kp DOWN    &kp RIGHT 
+		&trans        &trans 	 &trans    &kp DEL     &trans   	        &kp INSERT     &kp HOME     &kp PG_DN   &kp PG_UP   &kp END 
+					           &kp RET     &to DEFAULT	        &kp LC(BSPC)   &to NUM 
 		>;
 		};
 		
 		etc_layer {
 		bindings = <
-		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH      &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp TILDE &kp APOS  &kp LBRC  &kp RBRC   &kp BKSP
-		&bt BT_CLR    &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &kp SPC &to DEFAULT  				&kp BSPC  &to NUM
+		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp DLLR  &kp PRCNT    	&kp CARET  &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR 
+		&kp HASH      &kp QMARK  &kp FSLH  &kp COLON  &kp SEMI 			&kp TILDE &kp APOS  &kp LBRC  &kp RBRC   &kp BSPC
+		&bt BT_CLR    &kp KP_PLUS &kp LBKT &kp RBKT   &kp BSLH    	        &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
+					           &kp SPACE &to DEFAULT  		&kp BSPC  &to NUM
 		>;
 		};	
 		
