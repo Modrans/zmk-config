@@ -12,6 +12,7 @@
 #define NAV     1
 #define ETC     2
 #define NUM	3
+#define SYS	4
 
 &mt {
     flavor = "tap-preferred";
@@ -73,9 +74,9 @@
 		
 		etc_layer {
 		bindings = <
-		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp DLLR  &kp PRCNT    	&kp CARET  &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR 
+		&trans     &trans      &trans      &trans      &to SYS   	 	&kp CARET  &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR 
 		&kp HASH      &kp QMARK  &kp FSLH  &kp COLON  &kp SEMI 			&kp TILDE &kp APOS  &kp LBRC  &kp RBRC   &kp BSPC
-		&bt BT_CLR    &kp KP_PLUS &kp LBKT &kp RBKT   &kp BSLH    	        &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
+		&trans    &kp KP_PLUS &kp LBKT &kp RBKT   &kp BSLH    	                &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
 					           &kp SPACE &to DEFAULT  		&kp BSPC  &to NUM
 		>;
 		};	
@@ -89,5 +90,14 @@
 		>;
 		};	
         
+		sys_layer {
+		bindings = <
+		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans    &trans	        &trans &trans   &trans   &trans  &trans
+		&trans &trans &trans &trans &trans  					&trans &trans   &trans   &trans  &trans
+	        &bt BT_CLR  &trans &trans &trans &trans   				&trans &trans   &trans   &trans  &trans   
+					 &trans   &to DEFAULT  			&kp BSPC &kp DOT 
+		>;
+		};		
+	
 	};
 };
