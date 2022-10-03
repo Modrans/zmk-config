@@ -48,6 +48,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>;
         };
+	
+	td_sftcaps: tap_dance_shift_capsword {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SHIFT_CAPSWORD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
+        };
      };
 	
 	
@@ -59,7 +67,7 @@
 		&td_qesc      &kp W      &kp F    &kp P    &kp B    			&kp J &kp L  &kp U    &kp Y   &kp SEMI
 		&kp A         &kp R      &kp S    &kp T    &kp G 			&kp M &kp N  &kp E    &kp I   &kp O
 		&mt LSHIFT Z  &kp X      &kp C    &kp D    &kp V			&kp K &kp H  &kp COMMA &kp DOT &kp SLASH
-          				          &kp LSHIFT &kp SPACE  	        &kp BSPC &to NAV 
+          				          &td_sftcaps &kp SPACE  	        &kp BSPC &to NAV 
 		>;
 		};
 
