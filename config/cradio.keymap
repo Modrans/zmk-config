@@ -42,42 +42,63 @@
 &kp Z  &kp X  &kp C  &kp D      &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
                      &lt 2 TAB  &kp ENTER    &kp SPACE  &lt 1 BSPC
             >;
+
+            label = "default";
         };
 
-        right_layer {
+        nav_layer {
             bindings = <
 &kp INS     &kp N1  &kp N2  &kp N3  &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &kp COLON
 &kp DEL     &kp N4  &kp N5  &kp N6  &trans     &kp LARW  &kp DARW   &kp UARW   &kp RARW  &kp SEMI
 &caps_word  &kp N7  &kp N8  &kp N9  &kp N0     &trans    &trans     &trans     &trans    &trans
                             &trans  &kp ESC    &trans    &trans
             >;
+
+            label = "nav";
         };
 
-        left_layer {
+        etc_layer {
             bindings = <
 &trans    &kp LBKT  &kp LBRC  &kp RBRC  &trans       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT  &kp TILDE
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH  &kp GRAVE
 &trans    &trans    &trans    &trans    &trans       &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE  &trans
                               &trans    &trans       &trans     &trans
             >;
+
+            label = "etc";
         };
 
-        tri_layer {
+        num_layer {
             bindings = <
 &sys_reset   &trans  &trans  &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &sys_reset
 &bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
                              &trans      &trans          &trans  &trans
             >;
+
+            label = "num";
         };
 
-        layer_4 {
+        sys_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
+
+            label = "sys";
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+
+            label = "mouse";
         };
     };
 };
