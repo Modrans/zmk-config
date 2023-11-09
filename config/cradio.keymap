@@ -37,10 +37,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P      &kp B        &kp J      &kp L       &kp U      &kp Y    &kp SEMI
-&kp A  &kp R  &kp S  &kp T      &kp G        &kp M      &kp N       &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D      &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 2 TAB  &kp ENTER    &kp SPACE  &lt 1 BSPC
+&kp Q  &kp W  &kp F  &kp P      &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI
+&kp A  &kp R  &kp S  &kp T      &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D      &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH
+                     &lt 2 TAB  &kp ENTER    &kp SPACE  &to 1
             >;
 
             label = "default";
@@ -48,10 +48,10 @@
 
         nav_layer {
             bindings = <
-&kp INS     &kp N1  &kp N2  &kp N3  &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &kp COLON
-&kp DEL     &kp N4  &kp N5  &kp N6  &trans     &kp LARW  &kp DARW   &kp UARW   &kp RARW  &kp SEMI
-&caps_word  &kp N7  &kp N8  &kp N9  &kp N0     &trans    &trans     &trans     &trans    &trans
-                            &trans  &kp ESC    &trans    &trans
+&kp INS     &kp N1  &kp N2  &kp N3  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &to 2
+&kp DEL     &kp N4  &kp N5  &kp N6  &trans    &kp LARW  &kp DARW   &kp UARW   &kp RARW  &kp SEMI
+&caps_word  &kp N7  &kp N8  &kp N9  &kp N0    &trans    &trans     &trans     &trans    &trans
+                            &trans  &to 0     &trans    &to 3
             >;
 
             label = "nav";
@@ -59,10 +59,10 @@
 
         etc_layer {
             bindings = <
-&trans    &kp LBKT  &kp LBRC  &kp RBRC  &trans       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT  &kp TILDE
+&trans    &kp LBKT  &kp LBRC  &kp RBRC  &to 4        &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT  &kp TILDE
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH  &kp GRAVE
 &trans    &trans    &trans    &trans    &trans       &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE  &trans
-                              &trans    &trans       &trans     &trans
+                              &trans    &to 0        &trans     &to 3
             >;
 
             label = "etc";
@@ -73,7 +73,7 @@
 &sys_reset   &trans  &trans  &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &sys_reset
 &bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
-                             &trans      &trans          &trans  &trans
+                             &trans      &to 0           &trans  &to 1
             >;
 
             label = "num";
@@ -84,7 +84,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+                        &trans  &to 0     &trans  &trans
             >;
 
             label = "sys";
